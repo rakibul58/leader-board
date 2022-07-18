@@ -304,7 +304,24 @@ main{
         display: block;
         margin: 5px auto;
     }
-
+    .container{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .blogs{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .blog{
+        flex-direction: column;
+    }
+    .blog-details{
+        margin-left: 3px;
+    }
+    .courses{
+        grid-template-columns: repeat(1,1fr);
+    }
    
  }
 
@@ -341,5 +358,23 @@ main{
         width: 40px;
         display: block;
         margin: 5px auto;
+    }
+    .container{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .blogs{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .blog{
+        flex-direction: column;
+    }
+    .blog-details{
+        margin-left: 3px;
+    }
+    .courses{
+        grid-template-columns: repeat(2,1fr);
     }
 }
