@@ -12,6 +12,29 @@
 body{
     background: #E5E5E5;
 }
+
+.container{
+    background-color: #ffffff;
+    width: 870px;
+    margin-top: 36px;
+    border-radius: 5px;
+    padding-top: 33px;
+    padding-left: 33px;
+}
+
+.section-title{
+    color: #562EFF;
+    font-weight: 500;
+    font-size: 24px;
+    
+}
+
+hr{
+    border: 1px solid #D1D1D1;
+    width: 807px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 /* Header style */
 
 .nav-bar{
@@ -23,7 +46,7 @@ body{
 }
 .left-nav{
     display: flex;
-    margin-left: 80px;
+    margin-left: 220px;
 }
 .left-elements{
     height: 51px;
@@ -41,8 +64,13 @@ body{
     font-weight: 500;
     color: #ffffff;
 }
+.toggle-area{
+    display: none;
+}
+
+
 .right-nav{
-    margin-right: 50px;
+    margin-right: 125px;
 }
 .right-nav ul{
     display: flex;
@@ -54,7 +82,7 @@ body{
     list-style: none;
     width: 48px;
     height: 24px;
-    margin:0 -140px;
+    margin:0 -100px;
     
 }
 .right-nav ul li a{
@@ -68,4 +96,104 @@ body{
     width: 51px;
     height: 51px;
     margin-top: -10px;
+}
+
+/* main styles */
+
+main{
+    display: flex;
+    justify-content: center;
+    
+}
+.players{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 29px;
+    column-gap: 84px;
+}
+.players .player{
+    display: flex;
+    align-items: center;
+    
+}
+.players .player .player-img{
+    height: 56px;
+    width: 56px;
+}
+
+.players .player .player-info{
+    font-size: 18px;
+    font-weight: 500;
+    color: #000000;
+    margin-left: 16px;
+    margin-top: -13px;
+}
+
+/* responsiveness */
+ /* for smartphones*/
+ @media screen and (max-width:576px) {
+    .right-nav{
+        display: none;
+    }
+    .left-nav{
+        margin-left: 0;
+    }
+
+    .toggle-area{
+        display: block;
+    }
+
+    .toggle-area div{
+        width: 50px;
+        height: 50px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        margin-left:30vw;
+        display: flex;
+        align-items: center;
+        /* margin-top: 15px; */
+    }
+    .toggle-area div span{
+        background-color: black;
+        border: 2px solid black;
+        width: 40px;
+        display: block;
+        margin: 5px auto;
+    }
+
+   
+ }
+
+  /* for tablets */
+
+  @media screen and (min-width:577px) and (max-width:992px) {
+    .right-nav{
+        display: none;
+    }
+    .left-nav{
+        margin-left: 0;
+    }
+
+    .toggle-area{
+        display: block;
+    }
+
+    .toggle-area div{
+        width: 50px;
+        height: 50px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        margin-left:38vw;
+        display: flex;
+        align-items: center;
+ 
+    }
+    .toggle-area div span{
+        background-color: black;
+        border: 2px solid black;
+        width: 40px;
+        display: block;
+        margin: 5px auto;
+    }
 }
