@@ -1,3 +1,71 @@
+/* fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* General style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
 body{
-    background-color: red;
+    background: #E5E5E5;
+}
+/* Header style */
+
+.nav-bar{
+    background: #562EFF;
+    height: 94px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left-nav{
+    display: flex;
+    margin-left: 80px;
+}
+.left-elements{
+    height: 51px;
+    width: 36px;
+    margin-left: 25px;
+}
+.nav-logo{
+    width: 51px;
+    margin-top: -5px;
+}
+
+
+.logo-text{
+    font-size: 24px;
+    font-weight: 500;
+    color: #ffffff;
+}
+.right-nav{
+    margin-right: 50px;
+}
+.right-nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.right-nav ul li{
+    list-style: none;
+    width: 48px;
+    height: 24px;
+    margin:0 -140px;
+    
+}
+.right-nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+.right-nav .profile-img{
+    width: 51px;
+    height: 51px;
+    margin-top: -10px;
 }
